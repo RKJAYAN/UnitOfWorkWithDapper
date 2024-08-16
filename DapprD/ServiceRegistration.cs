@@ -17,7 +17,7 @@ namespace DapprD
             services.AddScoped<IUnitofWork, UnitofWork>();
 
             services.AddScoped((s) => new SqlConnection(
-                "Password=sa;Persist Security Info=True;User ID=sa;Initial Catalog=Dapper;Data Source=10.66.201.22;"));
+                "Password=xx;Persist Security Info=True;User ID=xx;Initial Catalog=Dapper;Data Source=xxxxxxxx;"));
             services.AddScoped<IDbTransaction>(s =>
             {
                 SqlConnection conn = s.GetRequiredService<SqlConnection>();
